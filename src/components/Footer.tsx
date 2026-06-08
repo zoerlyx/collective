@@ -93,7 +93,7 @@ export default function Footer() {
             </div>
           </div>
 
-        
+        </div>
 
         {/* Separator & Bottom Note */}
         <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-slate-200/80 pt-8 sm:flex-row text-xs text-slate-500" style={{ fontFamily: 'var(--font-sans)' }}>
