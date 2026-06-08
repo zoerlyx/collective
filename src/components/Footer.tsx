@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Heart, ArrowUpRight, HandHeart } from "lucide-react";
 
 export default function Footer() {
-   return (
+  return (
     <footer className="mt-20 w-full border-t border-slate-200/80 bg-[#FAF7F2] text-[var(--color-brand-dark)]">
       <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -72,8 +72,34 @@ export default function Footer() {
               </li>
             </ul>
           </div>
+
+          {/* Kolom 3: Kartu Kontribusi / Callout */}
+          <div className="space-y-4">
+            <div className="rounded-2xl border border-slate-200/80 bg-[#F3F1E9] p-5 shadow-xs">
+              <div className="flex items-center gap-2 text-[var(--color-brand-dark)] font-bold text-xs mb-2">
+                <HandHeart className="h-4 w-4 text-[var(--color-brand-accent)]" />
+                <span>Punya Barang Tak Terpakai?</span>
+              </div>
+              <p className="text-xs text-slate-600 leading-relaxed mb-4" style={{ fontFamily: 'var(--font-sans)' }}>
+                Buku kuliah, alat praktikum, atau barang elektronikmu bisa sangat berguna bagi mahasiswa lain.
+              </p>
+              <Link
+                to="/menyumbangkan"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-brand-dark)] px-4 py-2.5 text-xs font-semibold text-white shadow-xs transition-all hover:bg-[var(--color-brand-accent)] hover:text-[var(--color-brand-dark)]"
+                style={{ fontFamily: 'var(--font-sans)' }}
+              >
+                <span>Donasikan Sekarang</span>
+              </Link>
+            </div>
+          </div>
+
+        
+
+        {/* Separator & Bottom Note */}
+        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-slate-200/80 pt-8 sm:flex-row text-xs text-slate-500" style={{ fontFamily: 'var(--font-sans)' }}>
+          <p>© {new Date().getFullYear()} COLLECTIVE. Dikelola oleh dan untuk Mahasiswa FST.</p>
+        </div>
       </div>
     </footer>
-
-
+  );
 }
