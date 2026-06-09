@@ -2,7 +2,21 @@ import React from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import { useAuth } from '../contexts/useAuth';
 import { Card, CardHeader, CardTitle, CardDescription, CardFooter } from '../components/ui/card';
-
+import { 
+  ArrowRight, 
+  Gift, 
+  User, 
+  Sparkles, 
+  Compass, 
+  HeartHandshake, 
+  BookOpen,
+  Recycle,
+  Users,
+  FlaskConical,
+  ShieldCheck,
+  CheckCircle2,
+  Package
+} from 'lucide-react';
 
 // Data Konfigurasi Statis (Mencegah Re-render & Redundansi JSX)
 const TRUST_BADGES = [
@@ -308,7 +322,14 @@ export default function WelcomePengguna() {
                   </div>
                 </CardHeader>
                 
-                
+                <CardFooter className="p-4 sm:p-5 pt-0">
+                  <Link 
+                    to={menu.link} 
+                    className="w-full py-2.5 px-3.5 bg-[#F3F1E9] border border-slate-200/80 hover:border-[var(--color-brand-accent)] hover:bg-emerald-50 text-slate-700 hover:text-[var(--color-brand-hover)] font-medium text-xs sm:text-sm rounded-lg transition-all duration-200 flex items-center justify-center gap-2"
+                  >
+                    <span>{menu.btnText}</span>
+                  </Link>
+                </CardFooter>
               </Card>
             );
           })}
