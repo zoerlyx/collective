@@ -14,3 +14,21 @@ function AppContent() {
       </div>
     );
   }
+
+  return (
+    // Wrapper Flex Column agar Footer selalu berada di bagian paling bawah halaman
+    <div className="flex flex-col min-h-screen bg-[var(--color-brand-bg)]">
+      {/* 1. Navbar dipasang secara Global */}
+      <Navbar />
+    </div>
+  )
+
+
+  function App() {
+  return (
+    <AuthProvider> 
+      <AppContent />
+    </AuthProvider>
+  );
+}
+
