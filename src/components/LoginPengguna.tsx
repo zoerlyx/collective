@@ -57,9 +57,8 @@ const LoginPengguna = () => {
     }
   };
 
-
-return (
-     <div className="flex min-h-screen items-center justify-center bg-[var(--color-brand-bg)] p-4">
+  return (
+    <div className="flex min-h-screen items-center justify-center bg-[var(--color-brand-bg)] p-4">
       {/* Card container dengan max-width lebih kecil dan rounded tinggi */}
       <div className="w-full max-w-sm rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition-all">
         
@@ -77,14 +76,15 @@ return (
             Silakan masuk untuk melanjutkan
           </p>
         </div>
-              {/* Pesan Error */}
+
+        {/* Pesan Error */}
         {error && (
           <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-2.5 text-xs text-red-600">
             {error}
           </div>
         )}
 
-                {/* Form Login Ringkas */}
+        {/* Form Login Ringkas */}
         <form onSubmit={handleSubmit} className="mt-5 space-y-3.5">
           <div className="space-y-1">
             <label htmlFor="email" className="block text-xs font-semibold text-slate-700">
@@ -100,8 +100,6 @@ return (
               className="w-full rounded-full border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-900 outline-none transition-colors focus:border-[var(--color-brand-accent)] focus:bg-white focus:ring-1 focus:ring-[var(--color-brand-accent)]"
             />
           </div>
-
-          
 
           <div className="space-y-1">
             <div className="flex items-center justify-between">
@@ -122,6 +120,16 @@ return (
               className="w-full rounded-full border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-900 outline-none transition-colors focus:border-[var(--color-brand-accent)] focus:bg-white focus:ring-1 focus:ring-[var(--color-brand-accent)]"
             />
           </div>
+
+          {/* Button Gaya Pill khas UI Landing Page */}
+          <Button
+            type="submit"
+            disabled={loading}
+            className="mt-3 flex w-full items-center justify-center rounded-full bg-[var(--color-brand-dark)] py-2.5 text-xs font-semibold text-white transition-all hover:bg-[var(--color-brand-hover)] active:scale-[0.99] disabled:opacity-60"
+          >
+            {loading ? 'Memproses...' : 'Masuk'}
+          </Button>
+        </form>
 
         {/* Footer Link */}
         <p className="mt-5 text-center text-xs text-slate-500">
