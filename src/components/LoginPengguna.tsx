@@ -57,3 +57,26 @@ const LoginPengguna = () => {
     }
   };
 }
+
+return (
+    <div >
+          <h2 className="text-xl font-bold tracking-tight text-[var(--color-brand-dark)]">
+            Masuk ke Kolektif
+          </h2>
+          <p className="mt-1 text-xs text-slate-500">
+            Silakan masuk untuk melanjutkan
+          </p>
+        </div>
+
+        {/* Pesan Error */}
+        {error && (
+          <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-2.5 text-xs text-red-600">
+            {error}
+          </div>
+        )}
+    </div>
+
+  );
+};
+
+export default LoginPengguna;
