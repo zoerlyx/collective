@@ -78,7 +78,19 @@ return (
           </p>
         </div>
 
+        {/* Footer Link */}
+        <p className="mt-5 text-center text-xs text-slate-500">
+          Belum punya akun?{' '}
+          <Link
+            to="/registrasi"
+            className="font-semibold text-[var(--color-brand-accent)] hover:underline"
+          >
+            Daftar di sini
+          </Link>
+        </p>
 
+      </div>
+    </div>
   );
 };
 
