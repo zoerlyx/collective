@@ -56,10 +56,20 @@ const LoginPengguna = () => {
       setLoading(false);
     }
   };
-}
+
 
 return (
-    <div >
+     <div className="flex min-h-screen items-center justify-center bg-[var(--color-brand-bg)] p-4">
+      {/* Card container dengan max-width lebih kecil dan rounded tinggi */}
+      <div className="w-full max-w-sm rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition-all">
+        
+        {/* Header dengan Logo / Subtitle ringkas */}
+        <div className="text-center">
+          <div className="mx-auto mb-2 flex h-10 w-10 items-center justify-center rounded-full bg-[var(--color-brand-dark)] text-white">
+            <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 11h14l1 12H4L5 11z" />
+            </svg>
+          </div>
           <h2 className="text-xl font-bold tracking-tight text-[var(--color-brand-dark)]">
             Masuk ke Kolektif
           </h2>
@@ -68,13 +78,6 @@ return (
           </p>
         </div>
 
-        {/* Pesan Error */}
-        {error && (
-          <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-2.5 text-xs text-red-600">
-            {error}
-          </div>
-        )}
-    </div>
 
   );
 };
