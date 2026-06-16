@@ -77,6 +77,12 @@ return (
             Silakan masuk untuk melanjutkan
           </p>
         </div>
+              {/* Pesan Error */}
+        {error && (
+          <div className="mt-4 rounded-xl border border-red-200 bg-red-50 p-2.5 text-xs text-red-600">
+            {error}
+          </div>
+        )}
 
                 {/* Form Login Ringkas */}
         <form onSubmit={handleSubmit} className="mt-5 space-y-3.5">
@@ -94,6 +100,8 @@ return (
               className="w-full rounded-full border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-900 outline-none transition-colors focus:border-[var(--color-brand-accent)] focus:bg-white focus:ring-1 focus:ring-[var(--color-brand-accent)]"
             />
           </div>
+
+          
 
           <div className="space-y-1">
             <div className="flex items-center justify-between">
