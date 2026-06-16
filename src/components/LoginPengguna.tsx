@@ -78,6 +78,43 @@ return (
           </p>
         </div>
 
+                {/* Form Login Ringkas */}
+        <form onSubmit={handleSubmit} className="mt-5 space-y-3.5">
+          <div className="space-y-1">
+            <label htmlFor="email" className="block text-xs font-semibold text-slate-700">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+              placeholder="nama@email.com"
+              className="w-full rounded-full border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-900 outline-none transition-colors focus:border-[var(--color-brand-accent)] focus:bg-white focus:ring-1 focus:ring-[var(--color-brand-accent)]"
+            />
+          </div>
+
+          <div className="space-y-1">
+            <div className="flex items-center justify-between">
+              <label htmlFor="password" className="block text-xs font-semibold text-slate-700">
+                Password
+              </label>
+              <a href="#forgot" className="text-[11px] font-medium text-[var(--color-brand-accent)] hover:underline">
+                Lupa password?
+              </a>
+            </div>
+            <input
+              type="password"
+              id="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+              placeholder="••••••••"
+              className="w-full rounded-full border border-slate-200 bg-slate-50/50 px-3.5 py-2 text-xs text-slate-900 outline-none transition-colors focus:border-[var(--color-brand-accent)] focus:bg-white focus:ring-1 focus:ring-[var(--color-brand-accent)]"
+            />
+          </div>
+
         {/* Footer Link */}
         <p className="mt-5 text-center text-xs text-slate-500">
           Belum punya akun?{' '}
