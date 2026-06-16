@@ -6,7 +6,10 @@ import { Button } from './ui/button';
 const LoginPengguna = () => {
   console.log('LoginPengguna rendered');
 
-
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState<string>('');
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
 
@@ -53,3 +56,4 @@ const LoginPengguna = () => {
       setLoading(false);
     }
   };
+}
