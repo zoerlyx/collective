@@ -70,7 +70,7 @@ const RegistrasiPengguna = () => {
     }
   };
 
-   return (
+  return (
     <div className="flex min-h-screen items-center justify-center bg-[var(--color-brand-bg)] p-4">
       {/* Card Container Compact dengan Style Pill/Rounded */}
       <div className="w-full max-w-sm rounded-3xl border border-slate-200/60 bg-white p-6 shadow-sm transition-all">
@@ -181,6 +181,6 @@ const RegistrasiPengguna = () => {
         </p>
 
       </div>
-
+    </div>
   );
-}
+};
