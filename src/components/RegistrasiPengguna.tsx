@@ -184,3 +184,5 @@ const RegistrasiPengguna = () => {
     </div>
   );
 };
+
+export default RegistrasiPengguna;
