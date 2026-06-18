@@ -144,7 +144,70 @@ const handleProtectedNavigation = (targetPath: string) => {
         </div>
       </div>
 
-      
+      {/* Mini Stats */}
+      <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+        {STATS_CARDS.map((stat, idx) => {
+          const IconComponent = stat.icon;
+          return (
+            <div key={idx} className="p-3.5 sm:p-4 rounded-xl bg-[#F3F1E9] border border-slate-200/70 shadow-xs flex items-center gap-3">
+              <div className="p-2.5 bg-[#F3F1E9] text-[var(--color-brand-accent)] rounded-lg shrink-0 shadow-xs">
+                <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
+              </div>
+              <div className="min-w-0">
+                <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500 truncate">{stat.title}</p>
+                <p className={`text-sm sm:text-base font-semibold leading-tight font-serif ${stat.isAccent ? 'text-[var(--color-brand-accent)]' : 'text-slate-800'}`}>
+                  {stat.value}
+                </p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      {/* Tentang Platform */}
+      <section className="space-y-3.5 sm:space-y-4 pt-2">
+        <h2 className="text-lg sm:text-xl font-bold font-serif text-slate-900 tracking-tight">
+          Tentang Platform
+        </h2>
+
+        <div className="relative overflow-hidden rounded-2xl bg-[#F3F1E9] border border-slate-200/70 p-5 sm:p-7 lg:p-8 shadow-xs text-slate-800">
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-center">
+            <div className="lg:col-span-7 space-y-3 sm:space-y-4 text-left">
+              <h3 className="text-xl sm:text-2xl lg:text-3xl font-serif font-medium text-[var(--color-brand-dark)] leading-tight">
+                Wadah Solutif Perlengkapan Kuliah Mahasiswa
+              </h3>
+              <p className="text-slate-600 text-xs sm:text-sm leading-relaxed text-justify">
+                Platform ini dirancang khusus untuk memfasilitasi mahasiswa dalam saling berbagi sumber daya akademik. Mulai dari jas laboratorium, modul dan buku kuliah, alat praktikum, hingga perlengkapan pendukung studi lainnya dapat disalurkan secara <strong>100% gratis</strong> kepada sesama yang membutuhkan.
+              </p>
+              <div className="pt-2 grid grid-cols-2 gap-3 text-xs font-medium text-slate-700">
+                {ADVANTAGES.map((adv, idx) => (
+                  <div key={idx} className="flex items-center gap-2">
+                    <div className="w-1.5 h-1.5 rounded-full bg-[var(--color-brand-accent)]" />
+                    <span>{adv}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="lg:col-span-5 grid grid-cols-1 gap-2.5 sm:gap-3">
+              {PLATFORM_HIGHLIGHTS.map((item, idx) => {
+                const IconComponent = item.icon;
+                return (
+                  <div key={idx} className="p-3.5 sm:p-4 rounded-xl bg-white/40 border border-slate-200/80 flex items-start gap-3">
+                    <div className="p-2 bg-[#F3F1E9] text-[var(--color-brand-accent)] rounded-lg shrink-0 mt-0.5">
+                      <IconComponent className="w-4 h-4 sm:w-5 sm:h-5" />
+                    </div>
+                    <div>
+                      <h4 className="text-xs sm:text-sm font-bold text-slate-800 font-serif">{item.title}</h4>
+                      <p className="text-[11px] sm:text-xs text-slate-500 mt-0.5 leading-snug">{item.desc}</p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Grid Menu Utama */}
       <div className="space-y-3.5 sm:space-y-4">
