@@ -140,7 +140,16 @@ export default function SOP() {
 
         </div>
 
-        
+        {/* Footer Banner */}
+        <div className="bg-[#F5EFE6] rounded-2xl p-8 md:p-10 text-center border border-[#E6DCCE] mt-10 md:mt-12 shadow-sm">
+          <h3 className="font-serif text-xl md:text-2xl font-bold text-emerald-950 mb-3">
+            Mari Jaga Bersama
+          </h3>
+          <p className="text-emerald-900/80 max-w-2xl mx-auto leading-relaxed text-sm md:text-base">
+            Collective adalah milik kita bersama. Dengan menaati SOP dan etika ini, 
+            kita membangun lingkungan akademik FST yang saling percaya, aman, dan saling menguatkan.
+          </p>
+        </div>
 
       </div>
     </div>
