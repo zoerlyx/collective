@@ -30,6 +30,34 @@
 
 ---
 
+## 🔄 Transformation Overview (UI Revamp)
+
+<div align="center">
+
+| Tampilan Lama (Old UI) ❌ |  | Tampilan Baru (Dashboard) ✅ |
+| :---: | :---: | :---: |
+| ![Old UI](./public/docs/screenshots/old-ui.png) | ➡️️ | ![Dashboard](./public/docs/screenshots/dashboard.png) |
+
+</div>
+
+---
+
+## 📸 Application Overview
+
+<div align="center">
+
+| Dashboard Overview | Daftar Barang |
+| :---: | :---: |
+| ![Dashboard](./public/docs/screenshots/dashboard.png) | ![Daftar Barang](./public/docs/screenshots/daftar-barang.png) |
+| ** Standar Operasional (SOP)** | ** Form Donasi** |
+| ![SOP](./public/docs/screenshots/sop.png) | ![Form Donate](./public/docs/screenshots/form-donate.png) |
+| **About Page** | **User Profile** |
+| ![About](./public/docs/screenshots/about.png) | ![Profile](./public/docs/screenshots/profile.png) |
+
+</div>
+
+---
+
 ## 🚀 Fitur Utama
 
 - **Public Landing Page**: Menyajikan informasi komprehensif mengenai platform sebelum pengguna melakukan autentikasi.
