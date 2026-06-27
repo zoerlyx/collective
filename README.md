@@ -46,12 +46,12 @@
 
 <div align="center">
 
-| 📊 Dashboard Overview | 📦 Daftar Barang |
+| Dashboard Overview | Daftar Barang |
 | :---: | :---: |
 | ![Dashboard](./public/docs/screenshots/dashboard.png) | ![Daftar Barang](./public/docs/screenshots/daftar-barang.png) |
-| **📋 Standar Operasional (SOP)** | **💳 Form Donasi** |
+| ** Standar Operasional (SOP)** | ** Form Donasi** |
 | ![SOP](./public/docs/screenshots/sop.png) | ![Form Donate](./public/docs/screenshots/form-donate.png) |
-| **ℹ️ About Page** | **👤 User Profile** |
+| **About Page** | **User Profile** |
 | ![About](./public/docs/screenshots/about.png) | ![Profile](./public/docs/screenshots/profile.png) |
 
 </div>
