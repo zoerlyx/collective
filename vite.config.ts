@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [
     react(),
-    tailwindcss(), // <--- Plugin Tailwind v4
+    tailwindcss(), 
   ],
   resolve: {
     alias: {
@@ -16,5 +16,9 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
+  },
+  build: {
+    // Menaikkan batas peringatan ukuran file dari 500 kB menjadi 1000 kB (1 MB)
+    chunkSizeWarningLimit: 1000,
   },
 });
